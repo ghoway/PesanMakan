@@ -11,6 +11,7 @@ class CartService {
     if (this.discount) {
       total -= this.discount;
     }
+    total += total * 0.11;
     return total;
   }
 }
