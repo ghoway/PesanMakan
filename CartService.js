@@ -8,6 +8,7 @@ class CartService {
     for (const item of this.items) {
       total += item.price * item.quantity;
     }
+    total += total * 0.11;
     return total;
   }
 }
