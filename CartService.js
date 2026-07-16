@@ -8,6 +8,9 @@ class CartService {
     for (const item of this.items) {
       total += item.price * item.quantity;
     }
+    if (this.discount) {
+      total -= this.discount;
+    }
     total += total * 0.11;
     return total;
   }
